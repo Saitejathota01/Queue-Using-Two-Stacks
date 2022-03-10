@@ -5,14 +5,20 @@ import java.io.*;
 import java.util.*;
 
 class Queue {
+    Stack <Integer> stack1=new Stack<Integer>();
+    Stack <Integer> stack2=new Stack<Integer>();
+    private int firstElement;
+
 
 
     public Queue() {
 
-    }
+     }
 
     // Push element x to the back of queue.
     public void enqueue(int x) {
+        if(stack1.empty()) firstElement = x;
+        stack1.push(x);
 
     }
 
